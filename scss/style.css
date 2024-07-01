@@ -1,0 +1,186 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-size: cover;
+  background-attachment: fixed;
+  overflow: hidden;
+  height: 100vh;
+  color: white;
+}
+
+.background-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.263);
+  z-index: -1;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 56px 165px;
+  transition: transform 0.6s ease;
+  transform: translateY(0);
+}
+
+.container.show {
+  transform: translateY(-55%);
+  overflow: visible;
+}
+
+.container__quoteSection {
+  gap: 3%;
+  display: flex;
+}
+.container__quoteSection .getQuoteBtn {
+  margin-top: 10px;
+  display: flex;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+}
+.container__quoteSection .quote-text {
+  flex-direction: column;
+  display: flex;
+  gap: 13px;
+  font-size: 18px;
+  line-height: 28px;
+  width: 45%;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+.container__quoteSection .quote-text blockquote {
+  margin: 0;
+  padding: 0;
+}
+.container__quoteSection .quote-text p {
+  font-weight: bold;
+}
+
+.container__currentTime {
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: flex-end;
+  display: flex;
+}
+.container__currentTime .container__currentTime-section {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.container__currentTime .container__currentTime-section .container__currentTime-grattings {
+  display: flex;
+}
+.container__currentTime .container__currentTime-section .container__currentTime-grattings .icon {
+  width: 23px;
+  background-repeat: no-repeat;
+  margin-right: 13px;
+}
+.container__currentTime .container__currentTime-section .container__currentTime-grattings .good-grattings, .container__currentTime .container__currentTime-section .container__currentTime-grattings span {
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: 4px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.container__currentTime .container__currentTime-section .container__currentTime-number {
+  display: flex;
+  flex-direction: column;
+}
+.container__currentTime .container__currentTime-section .container__currentTime-number .container__currentTime-number-section {
+  display: flex;
+  align-items: baseline;
+  margin-bottom: 16px;
+}
+.container__currentTime .container__currentTime-section .container__currentTime-number .container__currentTime-number-section .container__currentTime-display {
+  font-size: 200px;
+  line-height: 200px;
+  font-weight: 700;
+  letter-spacing: -5px;
+  margin-right: 10px;
+}
+.container__currentTime .container__currentTime-section .container__currentTime-number .container__currentTime-number-section span {
+  font-size: 40px;
+  line-height: 28px;
+  font-weight: 300;
+}
+.container__currentTime .container__currentTime-section .container__currentTime-number .container__currentTime-location {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: 4.8px;
+}
+.container__currentTime .container__sliderBtn {
+  cursor: pointer;
+  display: flex;
+  border-radius: 50px;
+  padding: 15px 18px;
+  color: black;
+  align-items: center;
+  background-color: white;
+  gap: 13px;
+}
+.container__currentTime .container__sliderBtn .sliderText {
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: 5px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.container__currentTime .container__sliderBtn .arrow-icon {
+  cursor: pointer;
+  background: transparent;
+}
+
+.container-footer {
+  padding: 74px 165px;
+  backdrop-filter: blur(10px);
+  transition: transform 0.3s ease;
+  transform: translateY(0);
+}
+.container-footer .currentTime-details {
+  display: grid;
+  gap: 80px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  list-style: none;
+}
+.container-footer .currentTime-details .item {
+  display: flex;
+  flex-direction: column;
+}
+.container-footer .currentTime-details .item .footer-text {
+  font-size: 15px;
+  line-height: 28px;
+  letter-spacing: 3px;
+  font-weight: 400;
+  text-transform: uppercase;
+  list-style: none;
+}
+.container-footer .currentTime-details .item .footer-display {
+  font-size: 56px;
+  font-weight: 700;
+  list-style: none;
+}
+
+.container-footer.show {
+  transform: translateY(-100%);
+  overflow: visible;
+}
+
+/*# sourceMappingURL=style.css.map */

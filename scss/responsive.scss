@@ -1,0 +1,206 @@
+@media (max-width: 950px) {
+    .container{
+        padding: 80px 64px;
+    }
+
+    .container__quoteSection{
+        .quote-text{
+            width: 75%;
+        }
+    }
+
+    .container__currentTime{
+        gap: 80px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+
+    .container__currentTime{
+        gap: 80px;
+        flex-direction: column;
+        align-items: flex-start;
+    
+        .container__currentTime-section{
+    
+            .container__currentTime-grattings{
+                
+                .good-grattings, span{
+                    font-size: 18px;
+                    letter-spacing: 3.6px;
+                }
+            }
+    
+            .container__currentTime-number{
+    
+                .container__currentTime-number-section{
+    
+                    .container__currentTime-display{
+                        font-size: 175px;
+                        line-height: 175px;
+                        letter-spacing: -4.38px;
+                        margin-right: 12px; 
+                    }
+                    span{
+                        font-size: 32px;
+                    }
+                }
+    
+                .container__currentTime-location{
+                    font-size: 18px;
+                    letter-spacing: 3.6px;
+                }
+                
+            }
+        }
+    
+        .container__sliderBtn{
+            cursor: pointer;
+            display: flex;
+            border-radius: 50px;
+            padding: 15px 18px;    
+            color: black;
+            align-items: center;
+            background-color: white;
+            gap: 13px;
+    
+            .sliderText{
+                font-size: 16px;
+                line-height: 28px;
+                letter-spacing: 5px;
+                font-weight: 700;
+                text-transform: uppercase;
+            }
+    
+            .arrow-icon{
+                cursor: pointer;
+                background: transparent;
+            }
+        }
+        
+    }
+
+
+
+    .container-footer{
+        padding: 119px 64px;
+
+        .currentTime-details{
+            display: grid;
+            gap: 50px;
+
+            .footer-text{
+                font-size: 13px;
+                letter-spacing: 2.6px;
+            }
+    
+            .footer-display{
+                font-size: 40px;
+   
+            }
+        }
+    }
+}
+
+
+
+@media (max-width: 580px) {
+    .container{
+        padding: 31px 26px;
+    }
+
+    .container__quoteSection{
+        .quote-text{
+            width: 85%;
+            gap: 8px;
+            font-size: 12px;
+            line-height: 22px;
+        }
+    }
+
+    .container__currentTime{
+        gap: 80px;
+        flex-direction: column;
+        align-items: flex-start;
+
+        .container__currentTime-section{
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+    
+            .container__currentTime-grattings{
+                .good-grattings{
+                    font-size: 15px;
+                    line-height: 25px;
+                    letter-spacing: 3px;
+                }
+                span{
+                    display: none;
+                }
+            }
+
+            .container__currentTime-number{
+    
+                .container__currentTime-number-section{
+    
+                    .container__currentTime-display{
+                        font-size: 100px;
+                        line-height: 100px;
+                        letter-spacing: -2.5px;
+                        margin-right: 10px; 
+                    }
+                    span{
+                        font-size: 15px;
+                        line-height: 28px;
+                    }
+                }
+    
+                .container__currentTime-location{
+                    font-size: 15px;
+                    letter-spacing: 3px;
+                }
+                
+            }
+        }
+
+        .container__sliderBtn{
+            padding: 12px 21px;    
+            gap: 16px;
+    
+            .sliderText{
+                font-size: 12px;
+                line-height: 14px;
+                letter-spacing: 3.75px;
+            }
+        }
+    }
+    
+
+    .container-footer{
+        padding: 48px 26px;
+
+        .currentTime-details{
+            display: grid;
+            gap: 20px;
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: repeat(4, 1fr);
+
+            .item{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+    
+                .footer-text{
+                    font-size: 10px;
+                    line-height: 28px;
+                    letter-spacing: 2px;
+                }
+        
+                .footer-display{
+                    font-size: 20px;
+                    font-weight: 700;      
+                }
+            }
+        }
+    }
+}

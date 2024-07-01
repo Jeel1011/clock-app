@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+	
+	<title>Frontend Mentor | Clock App</title>
+	<!-- style file -->
+	<link rel="stylesheet" href="./scss/style.css">
+	<!-- responsive file -->
+	<link rel="stylesheet" href="./scss/responsive.css">
+	<!-- fone file -->
+	<link rel="stylesheet" href="./scss/font.css">
+</head>
+<body>
+	<!-- background darkness -->
+	<div class="background-overlay"></div>
+	<!-- container -->
+	<main class="container">
+		<!-- quote-section -->
+		<section class="container__quoteSection">
+			<div id="quoteContainer" class="quote-text"></div>
+			<button id="quoteBtn" class="getQuoteBtn"><img src="./assets/desktop/icon-refresh.svg" alt="refresh-icon"></button>
+		</section>
+
+		<!-- current time section with the btn -->
+		<section class="container__currentTime">
+			<!-- current time section -->
+			<div class="container__currentTime-section">
+				<!-- gratting section -->
+				<div class="container__currentTime-grattings">
+					<!-- sun/moon icon -->
+					<div class="icon"></div>
+					<!-- good grattings -->
+					<p class="good-grattings"></p>
+					<span>, it's currently</span>
+				</div>
+				<!-- current time number with time zone -->
+				<div class="container__currentTime-number">
+					<!-- current time display -->
+					<div class="container__currentTime-number-section">
+						<h2 class="container__currentTime-display"></h2><span></span>
+					</div>
+					<!--  timezone select box -->
+					<p class="container__currentTime-location">in <span></span></p>
+				</div>
+			</div>
+			<!-- more/less btn -->
+			<div class="container__sliderBtn">
+				<p class="sliderText">more</p>
+				<button class="arrow-icon"><img src="./assets/desktop/icon-arrow-down.svg" alt="icon-arrow-down"></button>
+			</div>
+		</section>
+	</main>
+
+	<!-- footer section -->
+	<footer class="container-footer">
+		<div class="currentTime-details">
+			<!-- current timezone -->
+			<ul class="currentTime-timezone-detail item">
+				<li class="timezone-text footer-text">Current timezone</li>
+				<li class="timezone-display footer-display"></li>
+			</ul>
+			<!-- day of the week -->
+			<ul class="currentTime-dayOfWeek-detail item">
+				<li class="dayOfWeek-text footer-text">Day of the week</li>
+				<li class="dayOfWeek-display footer-display"></li>
+			</ul>
+			<!-- day of the year -->
+			<ul class="currentTime-dayOfYear-detail item">
+				<li class="dayOfYear-text footer-text">Day of the year</li>
+				<li class="dayOfYear-display footer-display"></li>
+			</ul>
+			<!-- week number -->
+			<ul class="currentTime-weekNum-detail item">
+				<li class="weekNum-text footer-text">Week number</li>
+				<li class="weekNum-display footer-display"></li>
+			</ul>
+		</div>
+	</footer>
+	
+	<!-- script file -->
+	<script src="./script.js"></script>
+</body>
+</html>
